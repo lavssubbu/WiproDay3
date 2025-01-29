@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AccessSpecifierdemo/1.0.0": {
+        "dependencies": {
+          "WiproDay3Demo": "1.0.0"
+        },
+        "runtime": {
+          "AccessSpecifierdemo.dll": {}
+        }
+      },
+      "WiproDay3Demo/1.0.0": {
+        "runtime": {
+          "WiproDay3Demo.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccessSpecifierdemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WiproDay3Demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\bin\Debug\net8.0\WiproDay3Demo.exe
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\bin\Debug\net8.0\WiproDay3Demo.deps.json
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\bin\Debug\net8.0\WiproDay3Demo.runtimeconfig.json
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\bin\Debug\net8.0\WiproDay3Demo.dll
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\bin\Debug\net8.0\WiproDay3Demo.pdb
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.dll
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\refint\WiproDay3Demo.dll
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.pdb
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\WiproDay3Demo.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\WiproDay3Demo\WiproDay3Demo\obj\Debug\net8.0\ref\WiproDay3Demo.dll
