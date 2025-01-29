@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WiproDay3Demo
 {
     //public access modifier
-    internal class Customer
+    public class Customer
     {
         public int custId;
         public string custName;
