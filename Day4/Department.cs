@@ -11,6 +11,12 @@ namespace WiproOOPSconcepts
         public string DeptName { get; set; }
         public decimal Salary {  get; set; }
 
+        public Department(int id,string name,string dname,decimal salary) :base(id,name)
+        {
+            DeptName = dname;
+            Salary = salary;
+        }
+
         //public void show()
         //{
         //    Console.WriteLine(DeptName + " " + Salary);
