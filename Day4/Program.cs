@@ -1,40 +1,36 @@
-﻿namespace WiproOOPSconcepts
+﻿namespace MthdOverloading
 {
-    class Program
+    class AddOpe
     {
-        static void Main(string[] args)
+        public void Add(int a,int b)
         {
-          // Employee emp = new Employee();
-          //  emp.Empid = 11;
-          //  emp.EmpName = "Test";
-
-          ////  emp.Display();
-
-          //  Department dpt = new Department(); //creating instance for the derived class
-          //  dpt.Empid = 111;
-          //  dpt.EmpName = "Priya";
-          //  dpt.DeptName = "Develoepr";
-          //  dpt.Salary = 50000;
-
-            //dpt.Display();
-          //  dpt.Show();
-
-          //  Manager mgr = new Manager();
-            //mgr.Empid = 111;
-            //mgr.EmpName = "Priya";
-            //mgr.DeptName = "Develoepr";
-            //mgr.Salary = 50000;
-            //mgr.ManagerName = "Riyaz";
-            //mgr.Display();
-            int id = Convert.ToInt32(Console.ReadLine());
-            string name=Console.ReadLine();
-            string dname = Console.ReadLine();
-            decimal sal = Convert.ToDecimal(Console.ReadLine());
-            string mname = Console.ReadLine();
-            Manager mgrcon = new Manager(id,name,dname,sal,mname);
-            mgrcon.Display();
+            Console.WriteLine(a + b);
+        }
+        public static void Add(double a,double b)
+        {
+            Console.WriteLine(a + b);
+        }
+        public static void Add(int a, int b,int c)
+        {
+            Console.WriteLine(a + b);
+        }
+        public string Add(string a,string b)
+        {
+            return a + b;
+        }
+        public void Add(double c,float d)
+        {
+            Console.WriteLine(c + d);
+        }
+    }
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+           AddOpe op = new AddOpe();
+            Console.WriteLine(op.Add("csharp", "training"));
+            AddOpe.Add(10, 20, 30);              
 
         }
     }
 }
-
