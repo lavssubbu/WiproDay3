@@ -1,35 +1,38 @@
-﻿
-namespace INterfaceconcepts
+﻿using System;
+
+namespace WiproDay5
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            string ch;
-            do
-            {
-                Console.WriteLine("Enter the Shape: 1.Circle 2.REctangle");
-                string? type = Console.ReadLine();
+            Console.WriteLine("Enter the type of employee 1.Permanent 2.Temporary");
+            string? type =Console.ReadLine();
 
-                switch (type.ToLower())
+            if (type.ToLower().Contains("per"))
+            {
+                //  IEmployee employee = new PermanentEmployee() { empid = 111, empname = "Riya", salary = 70000 };
+             PermanentEmployee employee = new PermanentEmployee() { empid = 111, empname = "Riya", salary = 70000 };
+                employee.BasicDetails();
+                employee.SalaryDetails();
+                employee.AttendMeetings();
+                IEmployee emp = new PermanentEmployee() { empid = 113, empname = "Liya", salary = 80000 };
+                emp.BasicDetails();
+                emp.SalaryDetails();
+              
+            }
+            else if (type.ToLower().Contains("temp"))
+            {
+               IEmployee tmp = new TemporaryEmployee()
                 {
-                    case "circle":
-                        IShape ish = new Circle() { radius = 10 };
-                        ish.CalculateArea();
-                        break;
-                    case "rectangle":
-                        IShape rec = new Rect() { l = 10, b = 5 };
-                        rec.CalculateArea();
-                        break;
-                    default:
-                        IShape sq = new Circle();
-                        sq.DefaultSquare(5);
-                        break;
-                }
-                Console.WriteLine("Do you want to continue (yes/no):");
-                ch = Console.ReadLine();
-            } while (ch.Equals("yes"));
-          
+                    empid = 112,
+                    empname = "Riyaz",
+                    salaryperday = 7000
+                };
+                tmp.BasicDetails();
+                tmp.SalaryDetails();
+            }
+
         }
     }
 }
