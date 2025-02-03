@@ -1,4 +1,4 @@
-internal class Program
+﻿internal class Program
 {
     private static int count = 0;
     private static readonly object lockObj = new object();
