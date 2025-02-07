@@ -76,7 +76,43 @@ create table Product(Prodid int not null,proName varchar(30),price decimal(10,2)
 
 select proname,price,qty,price * qty as TotalPrice from Product
 
+	
 alter table Product add discount varchar(6)
 
 select * from Product where discount like '10!%' escape '!'
+
+alter table Product add discount varchar(6)
+
+select * from Product where discount like '10!%' escape '!'
+
+insert into product(prodid,proname,price,qty) values(113,'iPod',700,2)
+
+alter table product add constraint UQ_Proname unique(proname)
+
+delete from product where proname='ipod'
+
+alter table product add primary key(prodid)
+
+--Foreign Key 
+create table department(did int primary key,deptname varchar(20) not null unique)
+
+insert into department values(1,'HR'),(2,'Developer'),(3,'Testing')
+
+--Employee table - drop column dname
+alter table employee drop column dept
+
+alter table employee add deptid int foreign key references department(did)
+
+alter table employee add deptid int
+
+alter table employee 
+add constraint FK_deptid foreign key(deptid) references department(did)
+
+insert into employee(empid,empname,city,salary) values(19,'anu','pune',40000)
+
+--default 
+alter table employee add constraint df_did default 1 for deptid
+
+--check - 
+alter table employee add check(salary >=50000)
 
