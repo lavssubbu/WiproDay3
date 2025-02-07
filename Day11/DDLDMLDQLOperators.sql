@@ -57,7 +57,7 @@ select * from Employee
 
 select * from Employee where salary>55000 and dept='coding'
 select * from Employee where salary>55000 or dept='coding'
-
+select * from Employee where salary between 50000 and 70000
 select * from EMployee where dept in('Coding','hr')
 --% any number of characters , _ denotes one character
 select * from Employee where empname like '%a' --last character is a
