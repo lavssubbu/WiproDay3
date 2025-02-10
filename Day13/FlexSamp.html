@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            flex: 1;
+             padding: 20px;
+             margin-right: 1%;
+             margin-top: 1%;
+            background-color: #f0f0f0;
+            overflow: hidden; 
+        }
+          /* Add styling for the image */
+          .flex-item img {
+            display: block; /* Set the image to a block element */
+            width: 100%; /* Set the width to 100% of the container */
+            height: 100%; /* Set the height to 50% of the container */
+            object-fit: cover; /* Maintain the aspect ratio and fill the container */
+            transition: transform 0.3s ease;
+        }
+         /* Add the hover effect to zoom in the image */
+         .flex-item:hover img {
+            transform: scale(1.2);
+         }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item"> <img src="new2.jpg"/></div>
+        <div class="flex-item"><img  src="new3.jpg" /></div>
+        <div class="flex-item"><img  src="new4.webp" /></div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+      
+</body>
+</html>

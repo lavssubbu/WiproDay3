@@ -1,0 +1,21 @@
+#para
+{
+    color:aqua;
+    background-color: blueviolet;
+}
+.boxmodel
+{
+   width:200px;
+   height: 100px;
+   border:2px solid blueviolet;
+   margin:10px;
+   padding: 15px;
+   background-color: antiquewhite;
+}
+
+body{
+    background-image: url('sample.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

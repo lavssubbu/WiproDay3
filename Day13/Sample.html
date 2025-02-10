@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML</title>
+    <!--INternal Styling-->
+    <style>
+       <!--Tag Slectors-->
+        p{
+            color:red;
+            text-align: right;
+            background-color: bisque;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        img{
+            display:block;
+            margin: auto;
+        }
+
+        ul{
+            list-style-type: circle;
+        }
+        ol{
+            list-style-type:lower-alpha;
+        }
+        table,th,td{
+            border:1px dotted blue;
+            border-collapse: collapse;
+            padding:10px;
+        }
+        tr:nth-child(3)
+        {
+            background-color: rgb(180, 20, 20);
+        }
+        tr:nth-child(odd)
+        {
+            background-color: yellowgreen;
+        }
+        tr:nth-child(even)
+        {
+            background-color: rgb(192, 26, 164);
+        }
+        #paranm
+        {
+           color:cadetblue;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">Welcome to HTML</h1>
+    <h4 style="background-color: aqua;">Have a Nice Day!!</h4>
+    <p style="color: blueviolet;text-align: center;">Paragraph - Welcome to <em>HTML</em> <strong>Interesting!!</strong></p>
+    <p id="paranm">X<sup>2</sup>+ Y<sup>2</sup></p>
+    <p>X<sub>2</sub>+ Y<sub>2</sub></p>
+    <a href="https://www.wipro.com" target="_blank">Click Here</a>
+    <a href="filename.txt" download>Click Here</a>
+    <a href="mailto:lavssubbu@gmail.com">Send EMail</a>
+    <a href="tel:+1256133487">Call Us</a>
+    <!--Self closing-->
+    <a href="https://www.wipro.com" target="_blank"> <img src="Sample.jpg" height="150" width="200" alt="Scenary Image"></a>
+
+    <!--List -Ordered,Unordered, Definition-->
+    <h3>List of 5 Customers</h3>
+    <ol type="I">
+        <li>Rahul</li>
+        <li>Madhav</li>
+        <li>Reena</li>
+        <li>Niti</li>
+        <li>Megna</li>
+    </ol>
+
+    <h3>List of Customers</h3>
+    <ul type="square">
+        <li>Rahul</li>
+          <ol>
+            <li>DotNet</li>
+            <li>CSharp</li>
+          </ol>
+        <li>Madhav</li>
+        <ol>
+            <li>Angular</li>
+            <li>CSharp</li>
+          </ol>
+        <li>Reena</li>
+        <li>Niti</li>
+        <li>Megna</li>
+    </ul>
+    <!--Description dl - dt term and dd - definition-->
+    <dl>
+       <dt>HTML</dt>
+       <dd>HyperText Markup Language</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+     </dl>
+     <dl>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+     </dl>
+
+     <!--Tables-->
+     <table border="1px solid blue">
+        <thead style="background-color: darkblue;color: white;">
+            <tr>
+                <th>EmployeeID</th>
+                <th>EmployeeName</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>111</td>
+                <td>Anu</td>
+                <td rowspan="2">Developer</td>
+                <td rowspan="2">70000</td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>Riyaz</td>
+                
+            </tr>
+            <tr>
+                <td>113</td>
+                <td>Anu</td>
+                <td>HR</td>
+                <td>90000</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>Anu</td>
+                <td>Testing</td>
+                <td>60000</td>
+            </tr>
+        </tbody>
+     </table>
+     <br>
+     <!--Forms-->
+     <form>
+        <label for="name">Employee Name</label>
+        <input type="text" id="name" name="empname" placeholder="Enter EmployeeName" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"  placeholder="Enter Email"><br>
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="password" placeholder="Enter password"><br>
+        <br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="19" max="40" placeholder="Enter Age "><br>
+        <br>
+
+        <label for="progress">Course Progress</label>
+        <input type="range" id="progress" name="progress" min="0" max="100"><br>
+        <br>
+
+        <label for="gender" class="form-label">Gender</label>
+    <input type="radio" id="gender" name="gender" value="Male" >Male
+    <input type="radio" id="gender" name="gender" value="Female">Female
+
+    <br><br>
+
+    <label for="hobbies">Hobbies</label>
+    <input type="checkbox" id="hobbies" name="hobbies1" value="Listening Music"> Listening Music
+    <input type="checkbox" id="hobbies" name="hobbies2" value="Reading Books"> Reading Books
+    <input type="checkbox" id="hobbies" name="hobbies3" value="Playing"> Playing
+    <input type="checkbox" id="hobbies" name="hobbies4" value="Dancing"> Dancing
+
+    <br><br>
+
+    <select id="dropdown" name="role" required>
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full time Job</option>
+      <option value="learner">Full time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br><br>
+
+    <input type="color" id="one" name="one" value="#e12345">
+    <label for="one">One</label> <br />
+    <input type="color" id="two" name="two" value="#f6b73c">
+    <label for="two">Two</label> <br />
+    <input type="color" id="three" name="three" value="#g6523c">
+    <label for="three">Three</label>
+    <br>
+
+    Level of Understanding
+    <range min="1" max="5"></range>
+
+    <label for="bday">
+      <h3>Enter your Birthay:</h3>
+    </label>
+    <input type="date" id="bday" name="birthay" value="2021-12-10" min="1990-01-01" max="2022-01-01">
+
+    <br>
+
+    <label for="Brightness">Screen Brightness: &nbsp;</label>
+    <input type="range" id="Brightness" name="Brightness" min="0" max="100">
+    <br />
+    <label for="Volume">Adjust Volume : &nbsp; &nbsp;</label>
+    <input type="range" id="Volume" name="Volume" min="0" max="100">
+
+    <label for="dp">
+      <h3>Upload profile picture:</h3>
+    </label>
+    <input type="file" id="dp" name="avatar" accept="image/png, image/jpeg" />
+
+    <label for="phone">Enter your phone number: &nbsp;</label>
+    <input type="tel" id="phone" name="phone" pattern="[7-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+      required />
+    <br>
+
+    <input type="Submit" value="Submit">
+    <input type="reset"  value="Reset the form">
+
+    <input type="button" value="Click Me"> <br /><br />
+    <input type="button" onclick="window.alert('I\'m not given a value!')"> <br /> <!-- button without any value-->
+    <input type="button" value="Disabled button" disabled>
+        <input type="submit" value="submit">
+     </form>
+</body>
+</html>
