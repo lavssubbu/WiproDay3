@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <script>
+        function verifyLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            // Retrieve stored registration data from local storage
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+            // Perform verification by comparing the input with the stored data
+            if (storedUsername === username && storedPassword === password) {
+                alert('Login successful!');
+            } else {
+                alert('Invalid username or password.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button onclick="verifyLogin()">Login</button>
+   
+</body>
+
+</html>

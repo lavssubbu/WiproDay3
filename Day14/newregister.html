@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <script>
+        function storeRegistrationData() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            // Store form data in local storage
+            localStorage.setItem('username', username);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+            // Redirect to login page or perform other actions as needed
+            window.location.href = 'newlogin.html';
+        }
+    </script>
+</head>
+
+<body>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <l-bel for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button onclick="storeRegistrationData()">Register</button>
+      
+</body>
+
+</html>
