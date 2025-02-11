@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Fetch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #userInfo {
+            margin-top: 20px;
+        }
+        img {
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fetch Random User</h2>
+    <button onclick="fetchRandomUser()">Get Random User</button>
+    <div id="userInfo"></div>
+
+    <script>
+        function fetchRandomUser() {
+            fetch("https://..../")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const user = data.results[0];
+                    const userInfo = `
+                        <p><strong>Name:</strong> ${user.name.first} ${user.name.last}</p>
+                        <p><strong>Email:</strong> ${user.email}</p>
+                        <img src="${user.picture.large}" alt="User Profile">
+                    `;
+                    document.getElementById("userInfo").innerHTML = userInfo;
+                })
+                .catch(error => console.error("Error fetching random user:", error));
+        }
+    </script>
+</body>
+</html>
